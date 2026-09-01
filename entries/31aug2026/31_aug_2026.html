@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>August 25th 2026</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <h1 id="title" class="entry">Entry 31-aug-2026</h1>
+    <h2 class="entry header">The plan</h2>
+    <div class="preamble entry text-content">
+        <p>
+            So, as I mentioned in my previous entry, not only do I want to study and
+            learn web development, but I also want to polish my software development
+            skills. This means polishing my fundamentals. For that end, after searching
+            around (who am I kidding, I used ChatGPT for this :p) I got the following
+            list of resources:
+        </p>
+        <p>
+        <ul>
+            <li><a href="https://projectbook.code.brettchalupa.com/">Projectbook</a></li>
+            <li><a href="https://adventofcode.com/">AdventOfCode</a></li>
+            <li><a href="https://github.com/codecrafters-io/build-your-own-x">build-your-own-x</a></li>
+            <li><a href="https://codingchallenges.fyi/">codingchallenges</a></li>
+            <li><a href="https://scaledojo.dev/">ScaleDojo</a></li>
+            <li><a href="https://www.frontendmentor.io/">FrontendMentor</a></li>
+            <li><a href="https://leetcode.com/problem-list/design/">leetcode design</a></li>
+        </ul>
+        </p>
+        <p>
+            The idea is to leverage the items in this list to round-up my "preparation".
+            Reinforcing my engineering basics, and complementing with good 'ol
+            <a href="https://neetcode.io/">neetcode</a> and
+            <a href="https://leetcode.com/">leetcode</a>.
+        </p>
+        <p>
+            As to how to structure my learning... that's something I'm still thinking
+            over. My initial approach will be using 4 pomodoro sessions at the very
+            least.
+        </p>
+        <p>
+        <ol>
+            <li>Odin project <strong>(25 min)</strong></li>
+            <li>Leetcode style <strong>(25 min)</strong></li>
+            <li>Projectbook (for now) <strong>(25 min)</strong></li>
+            <li>Operating Systems (for now) <strong>(25 min)</strong></li>
+        </ol>
+        </p>
+        <p>
+            The reasoning behind choosing a pomodoro for reading up on Operating Systems
+            is mostly because I have a strong believe that by having a general
+            understanding of how an Operating System works I can use the experience
+            for more complex or similar abstractions. I've found that at my job,
+            some concepts similar to what would be thrown around at an OS class are
+            often heard as well. Concepts such as schedulers, processes, sockets, ports,
+            threads, parallelism, contexts, mutexes, semaphores, etc.
+        </p>
+        <p>
+            I want to have a full understanding of these concepts! I bet they unlock
+            a whole new perspective on software engineering and design! For this,
+            the book I will be using is the highly recommended
+            <em>Computer Systems: A Programmer's Perspective</em> by Bryant and
+            O'Hallaron, complementing as needed with whatever other online resource I
+            can find.
+        </p>
+
+        <p>
+            Having said all of that preamble, let's move on to what I've actually
+            learned today. That's enough planning for today.
+        </p>
+    </div>
+
+    <h2 class="entry header">Web dev stuff</h2>
+    <div class="entry text-content">
+        <p>
+            Today I learned about some basics of CSS. The basic syntax consists
+            of a selector, and encased in a block of curly braces some properties
+            and the values. The selector types can be elements, classes or id's.
+            Generally, <code>div</code> blocks are used to surround desirable groups
+            of elements which to apply style rules.
+        </p>
+        <p>
+            It's possible for a same list of properties to apply to different
+            selectors, by separating them with commas. It's also possible to
+            assign different classes to a same element by separating them with
+            spaces. Also, if you wish to match elements having two (or more) classes
+            you use a dot. So for example if an element has a <code>subsection header</code>
+            class, and you have some other element with just the <code>subsection</code>
+            class, you can select the element which has both the <code>subsection</code>
+            and <code>header</code> classes by using the <code>subsection.header</code>
+            selector. If you wish to select class + id, you use the hash symbol
+            instead of the dot.
+        </p>
+
+        <p>
+            One can also select elements by describing their ancestors and children.
+            So if we have a <code>div</code> with class <code>ancestor</code>
+            and within it a div with class <code>contents</code> and within it
+            another div with class <code>contents</code>, then both <code>divs</code>
+            within the <code>ancestor</code> scope would be selected and any other
+            element with class <code>contents</code> outside the scope of <code>ancestor</code>
+            would not be selected.
+        </p>
+        <p>
+            Such selector would be specified as <code>.ancestor .contents</code>.
+        </p>
+        <p>
+            Oh, and almost forgot! In order to <em>link</em> the CSS file
+            we need to <em>include it</em> on the <code>head</code> section
+            of the html document. In order to include it, you must add the
+            void element <code>link</code> with the <code>href</code> pointing
+            to the <code>.css</code> file and a <code>rel</code> with value
+            <code>stylesheet</code>.
+        </p>
+        <p>
+            Though you can also add a <code>style</code> tag within the
+            <code>head</code> element, or add inline css by adding the
+            <code>style</code> property to the element, but this is
+            discouraged since it's cleaner to keep css changes to just one place
+            (the file).
+        </p>
+    </div>
+    <h3>Some other related stuff...</h3>
+    <div class="entry text-content">
+        There are some exercises for this section, specified at <a href="https://github.com/TheOdinProject/css-exercises">css-exercises github</a> for the odin project, but I think I'll leave it for another
+        day since it's already late and I ended up using two pomodoros just
+        to finish this CSS section &#128517;
+    </div>
+
+    <h2>Time invested accounting</h2>
+    <div class="entry text-content">
+    <p>
+        I believe there is much value in registring how much time is invested.
+        When you look back it feels good to know how much time you've invested,
+        and also I'm a sucker for stats and seeing numbers go up lol.
+    </p>
+    <p>
+        So I will introduce this new section to keep track of how many pomodoros
+        I end up using on the things I worked on.
+    </p>
+    <p>
+        <ol>
+            <li>Writing the preamble stuff: around 15 min?</li>
+            <li>Web dev stuff: two pomodoros (50 min)</li>
+        </ol>
+    </p>
+    </div>
+
+    <p>
+        And well, that's it for today. I'll probably do the OS reading now on the couch.
+    </p>
+
+    <p><strong>:wq!</strong></p>
+</body>
+<footer><strong><a href="../../index.html">Back to index</a></strong></footer>
+
+</html>

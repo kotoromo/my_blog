@@ -1,0 +1,36 @@
+a {
+    color: orange;
+}
+
+h1 {
+    color: rgb(52, 201, 52);
+}
+
+.entries-to-blog-section {
+    color :rgb(15, 124, 212);
+}
+
+#title,
+footer {
+    background-color: rgb(104, 243, 138);
+    font-weight: 1000;
+}
+
+.preamble {
+    background-color: black;
+    color: aliceblue;
+}
+
+.entry.header {
+    background-color: rgb(104, 243, 138);
+    color: aliceblue;
+}
+
+.entry.text-content{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+img {
+    width: auto;
+}
