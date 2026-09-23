@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>September 22 2026</title>
+</head>
+<body>
+  <h1>Entry 22-september-2026</h1>
+  <h2>Some stuff I learned today</h2>
+    <p>So, continuing from yesterday, today I will also be studying about the
+      <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model">box model for CSS.</a> 
+    </p>
+    <p>
+      For the box model, I think this picture, sourced from the mdn doc for
+      it, shows pretty well the gist of it or at least more efficiently 
+      than a bunch of words would.
+    </p>
+    <p>
+      <img 
+      src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model/box-model.png"
+      alt="Box model">
+    </p>
+    <p>
+      As said before in yesterday's entry, the box's width and height define
+      those attributes of the <strong>content</strong> of the box. Therefore,
+      any padding and borders are added to those dimensions to define the total
+      size taken by the box.
+    </p>
+    <p>
+      Turns out there is also an alternative CSS box model. This <strong>alternative
+      box model is such that the width and height define the size</strong>. 
+      Therefore, to get the total size of the box there is no need to add the
+      padding and the border to the defined width and height accordingly.
+    </p>
+    <p>
+      The margin pushes all of the boxes away from the boundary keeping the
+      content, the border and the padding. If the margin is set to a negative
+      value, then boxes can overlap with other things in the page. The margin is
+      relative to the size of the visible box.
+    </p>
+    <p>
+      The margins can interact in different ways depending on the values.
+    </p>
+    <p>
+      <ul>
+        <li>Two positive margins combine into a single margin.</li>
+        <li>Two negative margins collaps and the smallest is kept.</li>
+        <li>Two different signed margins are collapsed so that the negative margin is substracted from the total.</li>
+      </ul>
+    </p>
+    <p>
+      Although the text uses the word "substract", I think it's more accurate to
+      say that in this case too the margins are added, or at least that's what I
+      got from the example presented. If I'm being honest, I can't say for
+      certain that I understood this, so this is something I need to study with 
+      more detail.
+    </p>
+    <p>
+      And I think that is all that I will review for now. It is late and I must
+      rest for the day.
+    </p>
+  <h2>Time invested accounting</h2>
+    <div class="entry text-content">
+    <p>
+        <ol>
+            <li>The Odin Project: 1 hour</li>
+        </ol>
+    </p>
+    </div>
+  <p><strong>:wq!</strong></p>
+</body>
+<footer><a href="../../index.html">Back to index</a></footer>
+</html>
