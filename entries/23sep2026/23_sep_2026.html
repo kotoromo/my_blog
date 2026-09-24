@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>September 23 2026</title>
+</head>
+<body>
+  <h1>Entry 23-september-2026</h1>
+  <h2>Some stuff I learned today</h2>
+    <p>
+      So, as promised yesterday today I will retake my studies on the box model
+      I'm a bit impatient about starting the javascript part of the course
+      because I've seen the cool stuff other people do with javascript and I'd
+      really like to get started on interesting projects to supplement my education.
+    </p>
+    <h3>Padding</h3>
+    <p>
+      So, having said that, in the CSS box model padding sits between the border
+      and the content area and <strong>is used to push the content away from 
+      the border.</strong> According to the mdn documentation, any background 
+      applied to the element will display behind the padding.
+    </p>
+    <p>
+      Similarly to margin, the padding can be specified for all of the
+      faces of the CSS box. (top, bottom, left and right). What's more,
+      specifying a negative padding value is the same as specifiying a padding
+      of zero.
+    </p>
+    <h3>The box model and inline boxes</h3>
+    <p>
+      It seems that, as the name implies, inline boxes are those which are 
+      placed inline, such as those boxes used for elements like span.
+    </p>
+    <p>
+      For inline boxes, width, height, and top and bottom margins do not affect
+      the position of the surronding content, though they do affect the size of
+      the inline box (well, only the top and bottom margins affect the size, not
+      the dimensional properties). Only the left and right padding, margins, and
+      borders affect the position of the text surronding the inline box.
+    </p>
+    <p>
+      The special value <code>inline-block</code> of the <code>display</code>
+      attribute aims to provide a middle ground between <code>inline</code>
+      and <code>block</code>. The general guideline for its use is to use it
+      when one does not want an item to break onto a new line but one does
+      want the box to respect the width and height and avoid overlapping. What 
+      follows is an example.
+    </p>
+
+    <p class="paragraph-containing-ugly-inline-overlap-example">
+      We want to avoid this overlapping being observed for this paragraph.
+      As I keep <span class="ugly-inline-overlap-span">typing</span> it gets easier and easier. Little by little I recover my
+      usual typing speed, which wasn't really that quick to begin with if I'm
+      being honest.
+    </p>
+
+    <p>
+      Now, what follows is an example of what it would look like if the
+      span used above had the inline-block set.
+    </p>
+
+    <p class="paragraph-containing-ugly-inline-overlap-example">
+      We want to avoid this overlapping being observed for this paragraph.
+      As I keep <span class="inline-block-example">typing</span> it gets easier and easier. Little by little I recover my
+      usual typing speed, which wasn't really that quick to begin with if I'm
+      being honest.
+    </p>
+    <p>
+      This display type of inline-block shows its usefulness (I've yet to confirm that)
+      when you want to give a link a larger hit area by adding padding.
+    </p>
+  <h2>Time invested accounting</h2>
+    <div class="entry text-content">
+    <p>
+        <ol>
+            <li>The Odin Project: 50 min~</li>
+        </ol>
+    </p>
+    </div>
+  <p><strong>:wq!</strong></p>
+</body>
+<footer><a href="../../index.html">Back to index</a></footer>
+</html>

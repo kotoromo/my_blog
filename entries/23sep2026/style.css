@@ -1,0 +1,25 @@
+.ugly-inline-overlap-span {
+  margin: 20px 30px;
+  padding: 10px 20px;
+  width: 80px;
+  height: 150px;
+  background-color: lightblue;
+  border: solid blue;
+  border-width: 7px 1px;
+}
+
+.paragraph-containing-ugly-inline-overlap-example {
+  border: 2px solid rebeccapurple;
+  width: 200px;
+}
+
+.inline-block-example {
+  margin: 20px 30px;
+  padding: 10px 20px;
+  width: 80px;
+  height: 150px;
+  background-color: lightblue;
+  border: solid blue;
+  border-width: 7px 1px;
+  display: inline-block;
+}
