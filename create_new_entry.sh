@@ -17,18 +17,25 @@ cat <<EOF > $file_path
   <title>$(date '+%B %d %Y')</title>
 </head>
 <body>
-  <h1>Entry $(date '+%d-%B-%Y' | tr '[:upper:]' '[:lower:]')</h1>
-  <h2>Some stuff I learned today</h2>
-    <p></p>
-  <h2>Time invested accounting</h2>
-    <div class="entry text-content">
-    <p>
-        <ol>
-            <li>Item 1: time</li>
-        </ol>
-    </p>
-    </div>
-  <p><strong>:wq!</strong></p>
+  <div class="introduction">
+    <h1>Entry $(date '+%d-%B-%Y' | tr '[:upper:]' '[:lower:]')</h1>
+    <h2>What I learned today</h2>
+  </div>
+  <div class="main-content">
+    <h2>Some stuff I learned today</h2>
+      <p></p>
+  </div>
+  <div class="ending-notes">
+    <h2>Time invested accounting</h2>
+      <div class="entry text-content">
+      <p>
+          <ol>
+              <li>Item 1: time</li>
+          </ol>
+      </p>
+      </div>
+    <p><strong>:wq!</strong></p>
+  </div>
 </body>
 <footer><a href="../../index.html">Back to index</a></footer>
 </html>
